@@ -1,0 +1,15 @@
+services:
+  app:
+    build: .
+    container_name: first_react_app_emmanuel
+    working_dir: /app
+    volumes:
+      - .:/app
+      - /app/node_modules
+
+    ports:
+      - "3000:3000"
+    command: npm run dev -- --port 3000
+
+volumes:
+  node_modules:
