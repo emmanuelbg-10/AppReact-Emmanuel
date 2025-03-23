@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function Boton() {
+function PruebaSuma() {
   const [result, setResultado] = useState(null);
 
   const holaMundo = <h1 className="centrar-titulo">hola Mundo</h1>;
@@ -54,4 +54,4 @@ function Boton() {
   );
 }
 
-export default Boton;
+export default PruebaSuma;
